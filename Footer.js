@@ -35,7 +35,6 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: "left",
     padding: 20,
-    marginTop: -100,
   },
   logo: {
     width: 60,

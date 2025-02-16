@@ -29,34 +29,39 @@ const Form = () => {
           
         <TextInput
           style={styles.input}
-          placeholder="First name*"
+            placeholder="First name*"
+            placeholderTextColor="#fff"
           value={formData.fname}
-          onChangeText={(text) => handleChange("First name", text)}
+          onChangeText={(text) => handleChange("fname", text)}
           />
         <TextInput
           style={styles.input}
-          placeholder="Last name*"
+            placeholder="Last name*"
+            placeholderTextColor="#fff"
           value={formData.lname}
-          onChangeText={(text) => handleChange("Last name", text)}
+          onChangeText={(text) => handleChange("lname", text)}
           />
           <TextInput
           style={styles.input}
-          placeholder="Company name*"
+            placeholder="Company name*"
+            placeholderTextColor="#fff"
           value={formData.cname}
-          onChangeText={(text) => handleChange("Company name", text)}
+          onChangeText={(text) => handleChange("cname", text)}
         />
         <TextInput
           style={styles.input}
-          placeholder="Email*"
+            placeholder="Email*"
+            placeholderTextColor="#fff"
           keyboardType="email-address"
           value={formData.email}
-          onChangeText={(text) => handleChange("Email address", text)}
+          onChangeText={(text) => handleChange("email", text)}
         />
         <TextInput
           style={styles.input}
-          placeholder="Message"
+            placeholder="Message"
+            placeholderTextColor="#fff"
           value={formData.message}
-          onChangeText={(text) => handleChange("Message", text)}
+          onChangeText={(text) => handleChange("message", text)}
         />
         <TouchableOpacity style={styles.button} onPress={handleSubmit}>
           <Text style={styles.buttonText}>Submit</Text>
@@ -95,6 +100,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#090619",
     borderRadius: 10,
     elevation: 3,
+    color: '#fff',
   },
   formTitle: {
     fontSize: 22,
